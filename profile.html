@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Playfair+Display&family=Raleway&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e15298ba49.js" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="profile.css">
+  <title>Henry's Portfolio</title>
+</head>
+<body>
+  <nav>
+    <div class="nav-links d-flex justify-content-end m-4 gap-5">
+      <a  href="#about-me-section"><h3 id="profile-link" class="mt-2">Profile</h3></a>
+      <a  href="#project-section"><h3 id="project-link" class="mt-2">Projects</h3></a>
+      <h3 id="cv" class="mt-2" data-bs-toggle="modal" data-bs-target="#cvModal">CV</h3>
+      <h3 id="contact" class="mt-2" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</h3>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row mt-5 ">
+        <div class="col-lg-5 text-center">
+          <img id="profile_pic" src="/Images/Profile Picture.png" class="rounded" alt="Henry Profile Picture">
+        </div>
+        <div class="col-lg-7">
+          <div class="title d-flex text-center mt-5">
+            <h1 class="fw-bold">Henry Ireland</h1>
+            <span class="break">|</span>
+            <h1 class="fw-bold">Software Engineer</h1>
+          </div>
+          <div class="text-center p-5">
+            <h3>Welcome to my portfolio, I am a junior full-stack developer & coding teaching-assistant based in London, UK 📍</h3>
+          </div>
+      </div>
+    </div>
+    <div id="tech-stack" class="d-flex justify-content-center text-wrap align-center gap-5 mt-5">
+      <h1 class="text-center"> Tech Stack </h1>
+      <div class="text-center">
+          <img class="code-icons" src="https://skillicons.dev/icons?i=js,html,css,ruby" />
+          <img class="code-icons" src="https://skillicons.dev/icons?i=rails,figma,bootstrap" />
+          <img class="code-icons" src="https://skillicons.dev/icons?i=heroku,postgres,react,tailwind" />
+      </div>
+    </div>
+    <div class="line-break">
+    </div>
+    <h1 class="fw-bold mt-5">About me</h1>
+    <div class="row">
+      <div class="text-center col-lg-6 mt-5 pt-5">
+        <h3 class="fw-bold pb-3">From sales to software development</h3>
+        <h6>Having spent 5 years working in various client management roles within tech I realised
+          I wanted to be on the other side and design, build and deploy tech rather than sell it.<h6>
+      </div>
+      <div class="col-lg-6 text-center mt-5">
+        <img class="pics"src="/Images/stock-image.jpeg" alt="office-picture">
+      </div>
+    </div>
+    <div id="le-wagon-first" class="row mt-5">
+      <div class="col-lg-6 text-center">
+        <img class="pics"src="/Images/Le Wagon.JPG" alt="Le Wagon">
+      </div>
+      <div class="text-center col-lg-6 mt-5 pt-5">
+        <h3 class="fw-bold pb-3">Furthering my knowledge with Le Wagon’s full-stack web-development bootcamp</h3>
+        <h6></h6>I successfully completed Le Wagon’s 9 week web-development bootcamp (September 2023). This specialised in Ruby &
+          the Ruby on Rails framework. I am now a qualified full-stack web-developer with experience in object-oriented programming, test-driven development & the use of relational databases.<h6>
+      </div>
+    </div>
+    <!-- Small screen version with reversed layout -->
+    <div id="le-wagon-reversed" class="row mt-5 d-none">
+      <div class="text-center col-lg-6 mt-5 pt-5">
+        <h3 class="fw-bold pb-3">Furthering my knowledge with Le Wagon’s full-stack web-development bootcamp</h3>
+        <h6></h6>I successfully completed Le Wagon’s 9 week web-development bootcamp (September 2023). This specialised in Ruby &
+        the Ruby on Rails framework. I am now a qualified full-stack web-developer with experience in object-oriented programming, test-driven development & the use of relational databases.<h6>
+        </div>
+        <div class="col-lg-6 text-center mt-5">
+          <img class="pics"src="/Images/Le Wagon.JPG" alt="Le Wagon">
+        </div>
+    </div>
+    <!-- Small screen version with reversed layout -->
+    <div class="row mt-5">
+      <div class="text-center col-lg-6 mt-5 pt-5">
+        <h3 class="fw-bold pb-3">Currently teaching & developing skills</h3>
+        <h6>I was selected to be a teaching assistant at Le Wagon and so I am now supporting the next batch of students with grasping coding concepts and assisting them to keep strong coding standards such as writing clean, dry and reusable code with Ruby, Javascript & SQL.
+          I am always striving to learn something new everyday and so I am  continuing to develop my skills for both front & back-end by learning Python & React.<h6>
+      </div>
+      <div class="col-lg-6 text-center mt-5">
+        <img class="pics"src="/Images/coding.jpeg" alt="office-picture">
+      </div>
+    </div>
+    <div class="line-break">
+    </div>
+    <div id="project-section" class="d-flex gap-5 mt-5 align-center">
+      <h1> <strong>Projects</strong> (Full-Stack Web-Applications)</h1>
+    </div>
+    <div class="text-center mt-4 mb-5">
+      <img id="fplbot-btn" class="project_logo m-3" src="/Images/FPLBOTLogo.png" alt="FPLBOT.logo">
+      <img id="boatel-btn" class="project_logo m-3" src="/Images/Boatel.png" alt="Boatel.logo">
+    </div>
+    <div class="FPLBOT-Container">
+        <h1>A Fantasy Premier League insights tool to help you beat everyone in your league! 🚀</h1>
+        <div class="mt-5 mb-5 text-center project-text">
+          <h4>
+            As part of a team we designed the app to help players make better informed decisions through suggested
+            transfers built with our model, keep on top of their league statistics and track how they are performing versus friends.
+          </h4>
+          <h4 class="mt-5">
+            PLBOT, developed using Ruby on Rails, seamlessly integrates 3 Fantasy Premier League’s API’s ensuring daily data updates for users throughout the 2023/24 season.
+          </h4>
+        </div>
+        <video class="project-video" src="/vidoes/FPLBOT.mp4" width="650" autoplay muted></video>
+        <div class="project-notes d-flex mt-5">
+          <div class="project-links">
+            <a class ="d-flex" href="http://www.fplbot.co.uk">
+              <h1>Live Demo </h1>
+              <i class="icons fa-solid fa-futbol fa-2xl" style="color: white"></i>
+            </a>
+            <a class ="d-flex" href="https://github.com/Iwanap1/fpl-insights">
+              <h1>Code </h1>
+              <i class="icons fa-brands fa-github fa-2xl" style="color: white"></i>
+            </a>
+          </div>
+          <h5 id="fplbot-note" class="text-center text-wrap p-3">Note: If you play FPL then you can create an account and use your FPL id which you can find on the FPL website. If you do not want to register
+            and want to take a look around then please use email: henryireland95@gmail & password: 123456 or just enjoy the video above - please refresh if video isn't loading </h5>
+        </div>
+    </div>
+    <div class="Boatel-Container d-none">
+      <h1>An AirBnB clone project for boat rentals! ⛵️</h1>
+      <div class="mt-5 mb-5 text-center project-text">
+        <h4>
+          As part of a team I helped design and develop Boatel which allows users to search for and book boats and also enables users to list their boats
+        </h4>
+        <h4 class="mt-5">
+          Users can also make updates to their bookings and listings and there is also a built in calander feature to see when your boat has been booked
+        </h4>
+      </div>
+      <div class="boatel-project d-flex text-center">
+        <div>
+          <a class ="d-flex" href="https://boatel-db43a638cc60.herokuapp.com/">
+            <h1 class="boatel-demo">Live Demo </h1>
+            <i class="icons fa-solid fa-sailboat fa-2xl" style="color: rgba(0, 0, 0, 0.6)"></i>
+          </a>
+          <a class ="d-flex" href="https://github.com/Hireland95/boatel">
+            <h1 class="boatel-demo">Code </h1>
+            <i class="icons fa-brands fa-github fa-2xl" style="color:rgba(0, 0, 0, 0.6)"></i>
+          </a>
+        </div>
+        <video class="project-video" src="/vidoes/BOATEL.mp4" width="650" autoplay muted></video>
+      </div>
+    </div> <div class="line-break">
+    </div>
+    <h1 class="text-center mt-5"> Don't hesitate to get in touch!</h1>
+    <div class="social-links-bottom">
+      <i data-bs-toggle="popover" data-bs-title="My number" data-bs-content="07943695127"  data-bs-placement="top"  class="fa-solid fa-phone fa-2xl" style="color: rgba(0, 0, 0, 0.6);"></i>
+      <i data-bs-toggle="popover" data-bs-title="My email" data-bs-content="henryireland95@gmail.com"  data-bs-placement="top"  class="fa-solid fa-envelope fa-2xl" style="color: rgba(0, 0, 0, 0.6);"></i>
+      <a href="https://www.linkedin.com/in/henry-ireland/"><i class="fa-brands fa-linkedin fa-2xl" style="color: rgba(0, 0, 0, 0.6);"></i></a>
+    </div>
+  </div>
+
+  <!-- CV MODAL -->
+  <div class="modal fade" id="cvModal"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="cvModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="/Images/Henry Ireland CV - Full-Stack Developer - 2023.jpg" alt="Henry-CV">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CV MODAL -->
+
+  <!-- Contact MODAL -->
+  <div class="modal fade" id="contactModal"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="contactModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h1> 📞 07943695127</h1>
+          <h1> 📧 henryireland95@gmail.com</h1>
+            <a href="https://www.linkedin.com/in/henry-ireland/"><i class="fa-brands fa-linkedin fa-2xl"></i> </a>
+            <a href="https://github.com/hireland95"><i class="fa-brands fa-github fa-2xl"></i> </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact MODAL -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="/profile.js"></script>
+</body>
+</html>
